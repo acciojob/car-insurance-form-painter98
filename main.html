@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method="get">
+	<form method="post">
 		<label for="name">Name*</label>
 		<input type="text" id="name" placeholder="enter name" required>
 		<br>
@@ -15,9 +15,9 @@
 		<input type="email" id="email" placeholder="enter email" required>
 		<br>
 		<label for="gender">Gender*</label>
-			<input type="radio" name="gender" >Male
-			<input type="radio" name="gender" >Female
-			<input type="radio" name="gender" >Others
+			<input type="radio" name="gender" required>Male
+			<input type="radio" name="gender" required>Female
+			<input type="radio" name="gender" required>Others
 		<br>
 		<label for="cars">Car Brands</label>
 		<select id="cars">
@@ -27,8 +27,8 @@
 		</select>
 		
 		<br>
-		<label for="Carage">Car Age*</label>
-		<input type="number" id="Carage" placeholder="enter car age" required>
+		<label for="carage">Car Age*</label>
+		<input type="number" id="carage" placeholder="enter car age" required>
 		<br>
 		<label for="dop">Date of Purchase*</label>
 		<input type="date" id="dop" placeholder="enter Date of Purchase" required>
@@ -36,7 +36,7 @@
 		<label for="password">Password*</label>
 		<input type="password" id="password" placeholder="enter password" required>
 		<br>
-		<button>Submit</button>
+		<button type="submit">submit</button>
 	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
